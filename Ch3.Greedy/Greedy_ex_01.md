@@ -17,11 +17,14 @@ print(count)
 ***
 - 답안 예시
 ```python
-n = int(input())
+# n 입력받기
+n = int(input()) 
 count = 0
+
+# 큰 단위의 화폐부터 차례로 확인
 coin_type=[500,100,50,10]
 for i in coin_type :
-    count += n//i
+    count += n//i  # 해당 화폐로 거슬러 줄 수 있는 동전의 개수 세기
     n %= i
 
 print(count)
